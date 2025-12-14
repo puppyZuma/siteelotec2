@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="titulo">Site Simples</title>
-    <link rel="stylesheet" href="estilos/style.css"
+    <link rel="stylesheet" href="estilos/logon.css"
 </head>
 <header class="header">
     <div class="titulo">
@@ -18,24 +18,37 @@
             <button class="button"><a href="Conta.html">Conta</a></button>
         </ul>
 </header>
-    <menu class="menuprincip">
+<body>
+    <script src="teste.js"></script>
+
+    <div class="menuu">
+
         <div>
            <label class="username">Nome de Usuario:</label>  
            <input type="text" id="username" name="username" class="campo" id="user"/>
         </div>
 
        <div>
-          <label class="Senha">Senha:</label>
+          <label class="Senha">Digite sua senha:</label>
+          <input type="password" id="Senha" name="password" minlength="6" required class="campo"/>
+       </div>
+
+       <div>
+          <label class="Senha">digite novamente sua senha:</label>
           <input type="password" id="Senha" name="password" minlength="6" required class="campo"/>
        </div>
 
        <div>
         <input type="submit" value="Log-In" class="campo"/>
        </div>
-    </menu>
-    <footer class="footer">
-        a
-    </footer>
-</body>
 
+       <script src="script/teste.js">
+        console.log("senha");
+       </script>
+
+    </menu>
+  
+</body>
+    <footer class="footer">
+    </footer>
 </html>
