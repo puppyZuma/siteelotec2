@@ -1,18 +1,21 @@
 
-let lista = [
-
+let banco_de_dados= [
+    {user: "andley", Senha: 111},
+    {user: "thiago", Senha: 222}
 ];
 
-let entrada;
 
-while (true) {
-    entrada = prompt("Digite algo (ou 'sair' para parar):");
 
-    if (entrada === "sair") {
-        break;
+
+
+
+function verificar () {
+    if(pass === banco_de_dados(Senha));
+    let password = document.getElementById("pass");
+    let username = document.getElementById("username");
+    let encontrado = banco_de_dados.find(u => u.user === username && u.senha === password);
+    if (encontrado) {
+        alert("ok");}else{
+            alert("usuario ou senha incorretos")
+        }
     }
-
-    lista.push(entrada);
-}
-
-console.log(lista);
