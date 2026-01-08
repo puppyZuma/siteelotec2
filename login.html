@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="titulo">Site Simples</title>
-    <script src="script/teste.js"></script>
+    <script src="teste.js"></script>
     <link rel="stylesheet" href="estilos/style.css"
 </head>
 <header class="header">
@@ -29,13 +29,25 @@
           <label class="Senha">Senha:</label>
           <input type="password" id="Senha" name="password" minlength="6" required class="campo"/>
        </div>
+       
+       <form class="loginForm">
+
+            <input type="text" id="user" placeholder="user" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <br><br>
+            <div>
+                <buton class="button" type="submit">Log  In</buton>
+            </div>
+            
+
+       </form>
 
        <div>
         <input type="submit" value="Log-In" class="campo"/>
        </div>
     </menu>
     <footer class="footer">
-        a
+        <p id="msg"></p>
     </footer>
 </body>
 

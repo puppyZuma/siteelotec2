@@ -1,7 +1,7 @@
 
 let banco_de_dados= [
-    {user: "andley", Senha: 111},
-    {user: "thiago", Senha: 222}
+    {user: "andley", Senha: "111"},
+    {user: "thiago", Senha: "222"}
 ];
 
 
@@ -11,11 +11,13 @@ let banco_de_dados= [
 
 function verificar () {
     if(pass === banco_de_dados(Senha));
-    let password = document.getElementById("pass");
-    let username = document.getElementById("username");
-    let encontrado = banco_de_dados.find(u => u.user === username && u.senha === password);
+    const password = document.getElementById("pass");
+    const username = document.getElementById("username");
+    const msg = document.getElementById("msg");
+
+    const encontrado = banco_de_dados.find(u => u.user === username && u.senha === password);
     if (encontrado) {
-        alert("ok");}else{
-            alert("usuario ou senha incorretos")
+        window.location.href = "Conta.html";}else{
+            msg.innerText = "Usuario ou senha incorreto"
         }
     }
